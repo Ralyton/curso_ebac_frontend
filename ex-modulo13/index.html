@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #cabecalho {
+            background-image: url(imagens/fundocarrosel.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .card {
+            max-width: 300px;
+            margin: 0px auto 50px;
+        }
+
+        .card-header {
+            background-color: rgb(31, 54, 42);
+            color: white;
+        }
+
+        .card-text {
+            color: black;
+        }
+
+        .carousel {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgb(31, 54, 42);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">    
+        <div id="fotos" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5000" class="carousel-item active">
+                    <img class="w-100" src="imagens/breakingbad01.jpeg" alt="Capa Breaking Bad">
+                </div>
+                <div data-bs-interval="4000" class="carousel-item">
+                    <img class="w-100" src="imagens/breakingbad02.jpeg" alt="Capa Breaking Bad">
+                </div>
+                <div data-bs-interval="4000" class="carousel-item">
+                    <img class="w-100" src="imagens/breakingbad03.jpeg" alt="Capa Breaking Bad">
+                </div>
+            </div>
+
+            <button type="button" data-bs-target="#fotos" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" data-bs-target="#fotos" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fotos" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#fotos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#fotos" data-bs-slide-to="2"></button>
+            </div>
+        </div> 
+    </header>
+
+    <div class="container">
+        <section>
+            <h1>Breaking Bad</h1>
+            <h2>Atores</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Bryan Cranston</strong>
+                        </header>
+                        <img src="imagens/bryancranston.jpeg" alt="Bryan Cranston">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Bryan Cranston é um ator premiado por sua atuação como Walter White na série "Breaking Bad". A performance de Cranston na série é considerada uma das melhores da história da televisão, rendendo-lhe quatro Emmys consecutivos de Melhor Ator em Série Dramática e estabelecendo-o como um dos atores mais talentosos de sua geração.
+                            </p>
+                        </div>
+                        <a href="#">
+                            <button type="button" class="btn btn-dark w-100">
+                                Ler mais
+                            </button>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Aaron Paul</strong>
+                        </header>
+                        <img src="imagens/aaronpaul.jpeg" alt="Aaron Paul">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Aaron Paul é um ator que ficou conhecido por seu papel como Jesse Pinkman na série "Breaking Bad", pela qual ganhou três Emmys de Melhor Ator Coadjuvante em Série Dramática por interpretar o jovem traficante de drogas que se torna parceiro de negócios do protagonista Walter White.
+                            </p>
+                        </div>
+                        <a href="#">
+                            <button type="button" class="btn btn-dark w-100">
+                                Ler mais
+                            </button>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Dean Norris</strong>
+                        </header>
+                        <img src="imagens/deannorris.jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Dean Norris é um ator que se destacou por sua interpretação como Hank Schrader, um agente da DEA na série "Breaking Bad", que investiga o tráfico de drogas em Albuquerque e se torna cunhado do protagonista Walter White, tendo um papel importante no desenrolar da trama.
+                            </p>
+                        </div>
+                        <a href="#">
+                            <button type="button" class="btn btn-dark w-100">
+                                Ler mais
+                            </button>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy;Breaking Bad 2023
+    </footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
