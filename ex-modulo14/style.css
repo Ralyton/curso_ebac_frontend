@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --titulo: 'Nunito', sans-serif;
+    --corpo: 'PT Sans', sans-serif;
+    --cor1: #32508C;
+    --cor2: #50ABBF;
+    --cor3: #4EA67D;
+    --cor4: #D9BB62;
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+.container h1 {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+.container h1:hover {
+    color: var(--cor4)
+}
+
+.nav-link {
+    color: white;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
+.nav-link:hover {
+    color: #D9BB62;
+}
+
+.titulo {
+    font-family: var(--titulo);
+}
+
+body {
+    font-family: var(--corpo);
+}
