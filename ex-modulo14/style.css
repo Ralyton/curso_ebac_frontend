@@ -6,29 +6,38 @@
     --titulo: 'Nunito', sans-serif;
     --corpo: 'PT Sans', sans-serif;
     --cor1: #32508C;
-    --cor2: #50ABBF;
-    --cor3: #4EA67D;
+    --cor2: #a2ebff87;
     --cor4: #D9BB62;
 }
 
 header {
     background-color: var(--cor1);
-}
+} 
 
 .container h1 {
     font-weight: bold;
     color: var(--cor4);
 }
 
+h2, h3, label{
+    color: var(--cor1);
+}
+
+#sobre-a-agencia {
+    background-color: var(--cor2);
+}
+
 .container h1:hover {
     color: var(--cor4)
 }
 
-.nav-link {
+#cabecalho .nav-link {
     color: white;
 }
 
-#cabecalho .nav .nav-link.active {
+#cabecalho .nav .nav-link.active,
+#servicos .nav .nav-link.active,
+form .btn:hover {
     background-color: var(--cor4);
     color: var(--cor1);
 }
@@ -43,4 +52,40 @@ header {
 
 body {
     font-family: var(--corpo);
+}
+
+#servicos {
+    background-color: var(--cor2);
+}
+
+#servicos .nav .nav-link{
+    color: var(--cor1);
+}
+
+#fale-conosco ul li {
+    display: inline;
+    list-style: none;
+}
+
+#fale-conosco a {
+    text-decoration: none;
+}
+
+#fale-conosco .instagram {
+    color: rgb(198, 6, 221);
+}
+
+#fale-conosco .whatsapp {
+    color: #158501;
+}
+
+form .btn {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }

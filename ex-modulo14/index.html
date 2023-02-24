@@ -23,25 +23,25 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link active">
+                        <a href="#sobre-a-agencia" class="nav-link active">
                             <i class="bi bi-house-door me-1"></i>
-                            Sobre a empresa
+                            Sobre a agência
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#eventos" class="nav-link">
                             <i class="bi bi-calendar-check me-1"></i>
                             Eventos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#servicos" class="nav-link">
                             <i class="bi bi-airplane"></i>
                             Nossos serviços
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#fale-conosco" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale conosco
                         </a>
@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-a-agencia">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -65,6 +65,215 @@
                         <img src="imagens/carousel/carrosel3.jpg" alt="Foto de um avião decolando">
                     </div>
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagens/agencia.jpeg" class="d-block w-100 rounded" alt="Foto da agência">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="titulo fw-bold">
+                                Sobre a agência
+                            </h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis et voluptatem omnis sunt hic, adipisci alias saepe nesciunt perferendis molestiae eos soluta exercitationem sed laborum facere, autem deleniti totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit vitae quae, dignissimos reprehenderit beatae provident recusandae, officiis, commodi voluptatem quis. Cumque iusto similique, sint ducimus eos pariatur sunt velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ea eos! Qui, repellat exercitationem enim reprehenderit repudiandae soluta praesentium sed eum impedit illo possimus corporis unde modi voluptate sequi animi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="titulo text-center fw-bold">
+                        Realize seus sonhos 
+                    </h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="imagens/eventos/cruzeiro.jpg" class="d-block w-100 rounded mb-2" alt="Foto de um cruzeiro">
+                        <h3 class="titulo fw-bold mt-3">
+                            <i class="bi bi-emoji-sunglasses-fill"></i>
+                            Cruzeiros de 7 dias
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae delectus nisi maiores aliquam, error explicabo, laboriosam reprehenderit autem ad facere rerum magnam eos reiciendis impedit amet laborum odit voluptates.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="imagens/eventos/eurotrip.jpg" class="d-block w-100 rounded mb-2" alt="Foto de Veneza">
+                        <h3 class="titulo fw-bold mt-3">
+                            <i class="bi bi-airplane-fill"></i>
+                            Euro trip
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptas accusamus repellendus eveniet ad, dolorem veniam ratione sit nulla magnam dolor, modi natus in blanditiis, dolorum ipsa quam impedit quos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mb-3">
+                    <h2 class="titulo fw-bold text-center">
+                        Nossos serviços
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <nav class="nav nav-pills flex-column nav-servicos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#reserva-voos" class="nav-link fw-bold active">
+                                Reservas de vôos
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aluguel-carros" class="nav-link fw-bold">
+                                Aluguel de carros
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#reserva-hoteis" class="nav-link fw-bold">
+                                Reserva de hotéis
+                            </button>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="reserva-voos">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100 mt-2 mb-3" src="imagens/servicos/avião.jpg" alt="Interior de um avião">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro accusamus ea eveniet! Sint molestias aperiam hic eligendi aliquam dolorum ut vero facilis dolore, doloribus adipisci, quos, officiis perferendis? Iure, illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero facilis modi, ratione dolores ipsam exercitationem magnam odit assumenda cumque, dolorum voluptas, totam obcaecati eum sit sequi quos laborum tempore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aluguel-carros">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100 mt-2 mb-3" src="imagens/servicos/carro.jpg" alt="Foto de alguns carros">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis necessitatibus natus distinctio tempore atque obcaecati illum animi, quasi perferendis. Vero dolorem non labore aliquid molestias enim eaque ab quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni consequatur voluptates, quidem minima autem recusandae est optio officia non, qui in neque fugiat distinctio! Nisi iste nihil impedit quis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="reserva-hoteis">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100 mt-2 mb-3" src="imagens/servicos/hotel.jpg" alt="Foto de um Resort">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis repellendus dolorem odio praesentium obcaecati consequuntur consectetur, laudantium eos accusantium dolores aliquam hic libero id laboriosam itaque cumque minus nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa ipsa maiores aspernatur quia, eaque eos nobis impedit, consequuntur iusto ipsum magni autem voluptates rerum ducimus doloribus dolorum saepe pariatur?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <h2 class="titulo text-center fw-bold">
+                        Fale conosco
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-5 me-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">
+                                    Seu nome
+                                </label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">
+                                    Seu e-mail
+                                </label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">
+                                    Seu telefone (opcional)
+                                </label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">
+                                    Sua mensagem
+                                </label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-3 ms-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
     </div>
