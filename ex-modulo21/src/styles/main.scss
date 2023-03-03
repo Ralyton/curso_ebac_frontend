@@ -1,8 +1,32 @@
 @use 'variaveis.scss';
+@use 'apresentacao.scss';
+@use 'shows.scss';
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: variaveis.$fonteTextos;
+    list-style: none;
+}
+
+.container__header {
+    display: flex;
+    flex-direction: column;
+    
+    &__img {
+        width: 100%;
+            
+        &__titulo {
+            position: relative;
+            text-align: center;
+            font-family: variaveis.$fonteTitulos;
+            font-size: 8vw;
+            font-weight: bold;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #82031A, #024649);
+            color: #fff;
+            padding-bottom: 16px;
+        }
+    }
 }
