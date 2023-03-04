@@ -2,20 +2,29 @@
     max-width: 1024px;
     width: 100%;
     margin: 16px auto; 
+    border: 5px solid #024649;
+    padding-bottom: 56px;
 
     h2 {
-        font-size: 24px;
+        font-size: 32px;
         text-transform: uppercase;
+        margin: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #024649;
     }
     
     &__questions {
+        margin: 24px 16px;
 
         &__item {
+            margin-top: 32px;
+            font-size: 24px;
 
             &__question {
                 position: relative;
                 display: block;
                 cursor: pointer;
+                font-weight: bold;
 
                 &::after {
                     position: absolute;
@@ -30,23 +39,24 @@
             }
 
             &--is-open {
-                .container__info__questions__item__question {
+                .container__info__questions__item__question::after {
                     content: '-';
                 }
 
                 .container__info__questions__item__answer {
                     height: auto;
-                    padding-bottom: 24px;
                     transition: height, 0.5s ease;
                 }
             }
 
             &__answer {
-
+                margin-left: 36px;
+                height: 0px;
+                overflow: hidden;
             }
 
             &__list {
-
+                list-style: disc;
             }
         }
     }

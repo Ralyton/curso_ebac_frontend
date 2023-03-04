@@ -11,24 +11,19 @@
     list-style: none;
 }
 
-.container {
+body {
     background-image: linear-gradient(to bottom, #82031A, #82031A, #82031A, #024649, #024649, #A98026, #A98026);
 }
 
 .container__header {
-    display: flex;
-    flex-direction: column;
-    
     &__img {
         width: 100%;
             
         &__titulo {
-            position: relative;
             text-align: center;
             font-family: variaveis.$fonteTitulos;
-            font-size: 8vw;
+            font-size: 116px;
             font-weight: bold;
-            height: 80vh;
             color: #fff;
             padding-bottom: 16px;
         }

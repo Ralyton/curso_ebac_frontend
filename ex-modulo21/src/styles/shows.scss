@@ -1,9 +1,7 @@
 .container__shows {
     max-width: 1024px;
     width: 100%;
-    margin: 36px auto 0px auto;
-    height: 80vh;
-    border-bottom: 5px solid #024649;
+    margin: 112px auto 200px auto;
 
     &__tabs {
         display: flex;
@@ -12,7 +10,7 @@
         &__button {
             padding: 8px 16px;
             margin-right: 16px;
-            margin-bottom: 40px;
+            margin-bottom: 64px;
             font-size: 24px;
             background: none;
             border: none;
@@ -41,6 +39,7 @@
         }
 
         &__item {
+
             img {
                 width: 100%;
             }

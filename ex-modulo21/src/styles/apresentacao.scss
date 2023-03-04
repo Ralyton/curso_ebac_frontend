@@ -1,16 +1,12 @@
 .container__apresentacao {
     max-width: 1024px;
     width: 100%;
-    margin: 0px auto;
+    margin: 56px auto 200px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 36px;
     align-items: center;
-    position: absolute;
-    top: 175%;
-    left: 50%;
-    transform: translate(-50%, -175%);
-    border-bottom: 3px solid #E28509;
+    border-bottom: 5px solid #E28509;
 
     &__img {
         width: 100%;
