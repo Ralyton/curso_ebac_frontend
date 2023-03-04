@@ -2,6 +2,8 @@
     max-width: 1024px;
     width: 100%;
     margin: 36px auto 0px auto;
+    height: 80vh;
+    border-bottom: 5px solid #024649;
 
     &__tabs {
         display: flex;
@@ -16,9 +18,11 @@
             border: none;
             text-transform: uppercase;
             cursor: pointer;
+            border-bottom: 5px solid transparent;
+            color: lime;
             
             &--is-active {
-                border-bottom: 3px solid #82031A;
+                border-bottom: 5px solid lime;
             }
         }
     }
@@ -28,6 +32,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 36px;
         align-items: center;
+        text-align: justify;
+        font-size: 1.2em;
+        color: rgba(255, 255, 255, 0.9);
 
         &--is-active {
             display: grid;
@@ -38,5 +45,5 @@
                 width: 100%;
             }
         }
-    }
+    } 
 }

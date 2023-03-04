@@ -1,0 +1,53 @@
+.container__info {
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px auto; 
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    
+    &__questions {
+
+        &__item {
+
+            &__question {
+                position: relative;
+                display: block;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    top: 0px;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                    content: '+';
+                }
+            }
+
+            &--is-open {
+                .container__info__questions__item__question {
+                    content: '-';
+                }
+
+                .container__info__questions__item__answer {
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, 0.5s ease;
+                }
+            }
+
+            &__answer {
+
+            }
+
+            &__list {
+
+            }
+        }
+    }
+}

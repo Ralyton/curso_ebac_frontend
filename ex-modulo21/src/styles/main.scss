@@ -1,6 +1,7 @@
 @use 'variaveis.scss';
 @use 'apresentacao.scss';
 @use 'shows.scss';
+@use 'info.scss';
 
 * {
     margin: 0px;
@@ -8,6 +9,10 @@
     box-sizing: border-box;
     font-family: variaveis.$fonteTextos;
     list-style: none;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, #82031A, #82031A, #82031A, #024649, #024649, #A98026, #A98026);
 }
 
 .container__header {
@@ -23,8 +28,7 @@
             font-family: variaveis.$fonteTitulos;
             font-size: 8vw;
             font-weight: bold;
-            height: 100vh;
-            background-image: linear-gradient(to bottom, #82031A, #024649);
+            height: 80vh;
             color: #fff;
             padding-bottom: 16px;
         }
