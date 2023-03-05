@@ -26,6 +26,26 @@ body {
             font-weight: bold;
             color: #fff;
             padding-bottom: 16px;
+
+            @media (max-width: 767px) {
+                font-size: 40px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 64px;
+            }
         }
+    }
+}
+
+.container__footer {
+    text-align: center;
+    padding: 16px;
+    background-color: #024649;
+    color: #fff;
+    font-weight: bold;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 24px;
     }
 }

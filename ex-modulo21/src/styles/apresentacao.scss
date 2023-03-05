@@ -8,13 +8,42 @@
     align-items: center;
     border-bottom: 5px solid #E28509;
 
+    @media (max-width: 767px) {
+        display: block;
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        display: block;
+        margin: 16px auto;
+        width: 80%;
+    }
+
     &__img {
         width: 100%;
+
+        @media (max-width: 767px) {
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            margin-bottom: 16px;
+        }
 
         &__sinopse {
             font-size: 1.2em;
             text-align: justify;
             color: rgba(255, 255, 255, 0.8);
+
+            @media (max-width: 767px) {
+                padding-bottom: 8px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 2.1em;
+                padding-bottom: 16px;
+            }
         }
     }
 }

@@ -1,9 +1,18 @@
 .container__info {
     max-width: 1024px;
     width: 100%;
-    margin: 16px auto; 
+    margin: 16px auto 112px auto; 
     border: 5px solid #024649;
-    padding-bottom: 56px;
+    padding-bottom: 24px;
+
+    @media (max-width: 767px) {
+        width: 80%;
+        margin: 0px auto 64px auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 80%;
+    }
 
     h2 {
         font-size: 32px;
@@ -11,6 +20,14 @@
         margin: 16px;
         padding-bottom: 16px;
         border-bottom: 1px solid #024649;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 40px;
+        }
     }
     
     &__questions {
@@ -19,6 +36,14 @@
         &__item {
             margin-top: 32px;
             font-size: 24px;
+
+            @media (max-width: 767px) {
+                font-size: 0.9em;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 32px;
+            }
 
             &__question {
                 position: relative;
@@ -53,10 +78,14 @@
                 margin-left: 36px;
                 height: 0px;
                 overflow: hidden;
+
+                @media (max-width: 767px) {
+                    margin-left: 8px;
+                }
             }
 
             &__list {
-                list-style: disc;
+                list-style: inside;
             }
         }
     }
